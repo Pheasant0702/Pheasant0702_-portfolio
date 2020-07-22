@@ -1,0 +1,381 @@
+﻿@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400');
+
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Nanum+Gothic';
+}
+ul, li {
+    list-style: none;
+}
+a {
+    outline: none;
+    text-decoration: none;
+    color:#555;
+}
+body{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.wrap{
+    background-color: #ff5a00;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.wrap> .wrap_box{
+    width: 1100px;
+    background-color: #ffffff;
+    box-shadow: 15px 15px 0px  black;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*각 섹션들에게 기본 값 설정*/
+.wrap> .wrap_box> section{
+    margin-left: 80px;
+    width: 950px;
+    height: 900px;
+    margin: 0 auto;
+}
+/*---------------섹션1---------------*/
+#sct1{
+    text-align: center;
+}
+/*섹션1 타이틀*/
+#sct1> .one_title{
+    width: 500px;
+    height: 500px;
+    padding: 200px 0px 200px 0px;
+    font-size: 70px;
+    text-align: left;
+    color: #000;
+}
+#sct1> .one_title> p{
+    padding-bottom : 20px;
+    font-weight: 100;
+}
+#sct1> .one_title> p:nth-child(2){
+    color: #c64600;
+    font-weight: 500;
+}
+#sct1> p{
+    position: absolute;
+    top: 20px;
+    left: 750px;
+    color: black;
+}
+
+/*---------------섹션2---------------*/
+#sct2{
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+/*두번째 타이틀*/
+#sct2> .sct2_1{
+    margin-top: 30px;
+}
+#sct2> .sct2_1> p{
+    font-size: 25px;
+    font-weight: 400;
+    display: inline-block;
+}
+#sct2> p:nth-child(1){
+    width: 300px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 35px;
+    background-color: yellow;
+}
+#sct2> .sct2_1> p:nth-child(3){
+    height: 5px;
+    border-bottom: 25px yellow solid;
+}
+/*프로필사진, (이름, 나이, 번호) 소개*/
+#sct2> .sct2_2{
+    display: flex;
+}
+#sct2> .sct2_2> .img{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+#sct2> .sct2_2> .img> img{
+    margin: 30px 0px;
+    border-radius: 2500px;
+    width: 200px;
+    height: 200px;
+    border: 2px black solid;
+    box-shadow: 5px 5px 0px  black;
+    -webkit-transform: scale(1);
+    transition: all 0.3s ease-in-out;   
+}
+#sct2> .sct2_2> .img> img:hover{
+    -webkit-transform: scale(1.1);
+}
+#sct2> .sct2_2> .img> div{
+    margin-bottom: 15px;
+}
+#sct2> .sct2_2> .img> div> p{
+    font-size: 20px;
+    display: inline-block;
+}
+#sct2> .sct2_2> .img> div> p:nth-child(2n){
+    height: 5px;
+    border-bottom: 20px yellow solid;
+}
+/*긴 자기소개 div*/
+#sct2> .sct2_2> .more{
+    width: 700px;
+    margin-top: 25px;
+    height: 335px;
+    border-radius: 50px;
+    border: 2px black solid;
+    text-align: left;
+}
+#sct2> .sct2_2> .more> .more_1{
+    margin: 45px 60px;
+    display: flex;
+    flex-direction: column;
+}
+#sct2> .sct2_2> .more> .more_1> div>  p{
+    font-size: 20px;
+    margin: 12px 3px;
+    display: inline-block;
+}
+/*형광펜 효과*/
+#sct2> .sct2_2> .more> .more_1> div:nth-child(1)>  p:nth-child(1){
+    height: 5px;
+    border-bottom: 20px yellow solid;
+}
+#sct2> .sct2_2> .more> .more_1> div:nth-child(2)>  p:nth-child(2){
+    height: 5px;
+    border-bottom: 20px yellow solid;
+}
+#sct2> .sct2_2> .more> .more_1> div:nth-child(2)>  p:nth-child(3){
+    margin: 0px;
+}
+#sct2> .sct2_2> .more> .more_1> div:nth-child(3)>  p:nth-child(2){
+    height: 5px;
+    border-bottom: 20px yellow solid;
+}
+#sct2> .sct2_2> .more> .more_1> div:nth-child(4)>  p:nth-child(1){
+    height: 5px;
+    border-bottom: 20px yellow solid;
+}
+
+
+/*---------------섹션3---------------*/
+#sct3{
+   display: flex;
+   flex-direction: column;
+   height: 2100px;
+}
+#sct3> p{
+    width: 450px;
+    height: 50px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 35px;
+    margin-top: 50px;
+    background-color: yellow;
+    display: block;
+}
+/*(포스터, 로고, 굿즈) 모은 div*/
+#sct3> div{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#sct3> div> div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+#sct3> div> div> p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 20px yellow solid;
+    width: 100px;
+    height: 10px;
+}
+#sct3> div> div> div{
+    display: flex;
+    justify-content: space-between;
+}
+/*각각의 div 기본 값 설정*/
+#sct3> div> div> div> div{
+    border-radius: 20px;
+    border: 2px black solid;
+    width: 200px;
+    height: 200px;
+    box-shadow: 5px 5px 0px  black;
+    -webkit-transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+#sct3> div> div> div> div:hover{
+    -webkit-transform: scale(1.1);
+    overflow:hidden;
+}
+#sct3> div> div> div> div> a> img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+}
+/*웹디자인, 웹퍼블리싱 모은 div*/
+#sct3> .sct3_2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 550px;
+    height: 800px;
+}
+#sct3> .sct3_2> p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    border-bottom: 20px yellow solid;
+    width: 300px;
+    height: 10px;
+}
+#sct3> .sct3_2> img{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    -webkit-transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+#sct3> .sct3_2> img:hover{
+    -webkit-transform: scale(1.1);
+}
+#sct3> .sct3_2> div{
+    height: 200px;
+}
+#sct3> .sct3_2> div> p{
+    font-size: 20px;
+    text-align: left;
+    width: 150px;
+    margin: 0 auto;
+    font-weight: 400;
+}
+#sct3> .sct3_2> div> p:nth-child(1){
+    width: 250px;
+    height: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    border-bottom: 20px yellow solid;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#sct3> .sct3_2> div> p:nth-child(2){
+    text-align: center;
+    width: 100px;
+    height: 0px;
+    color: white;
+    border-bottom: 25px #ff5a00 solid;
+}
+
+
+
+/*---------------섹션4---------------*/
+/*(열정, 진심, 노력) 모은 div*/
+#sct4> .sct4_all{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#sct4> .sct4_all> div{
+    width: 100%;
+    height: 180px;
+    display: flex;
+}
+#sct4> .sct4_all> div> div:nth-child(1){
+    margin: 10px;
+    width: 200px;
+    height: 150px;
+    background-color: yellow;
+    border: 5px black solid;
+    border-radius: 100px;
+    margin-right: 50px;
+    -webkit-transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+#sct4> .sct4_all> div> div:nth-child(1):hover{
+    -webkit-transform: scale(1.1);
+    overflow:hidden
+}
+#sct4> .sct4_all> div> div:nth-child(1)> img{
+    width: 60%;
+    height: 60%;
+    margin: 30px;
+    overflow: hidden;
+}
+#sct4> .sct4_all> div> div:nth-child(2){
+    width: 100%;
+    height: 100%;
+}
+#sct4> .sct4_all> div> div:nth-child(2)> p:nth-child(1){
+    width: 400px;
+    height: 10px;
+    text-align: left;
+    font-size: 30px;
+    margin-top: 30px;
+    border-bottom: 25px yellow solid;
+    
+}
+#sct4> .sct4_all> div> div:nth-child(2)> p:nth-child(2){
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+}
+#sct4> p:nth-child(1){
+    width: 450px;
+    height: 50px;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 35px;
+    background-color: yellow;
+    display: block;
+}
+
+
+
+/*---------------섹션5---------------*/
+#sct5{
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+#sct5> p{
+    font-size: 40px;
+    margin: 20px 350px;
+    border-bottom: 40px yellow solid;
+    height: 10px;
+    width: 250px;
+}
+#sct5> div{
+    width: 500px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 10px 10px 0px  black;
+    border: 5px black solid;
+}
+#sct5> div> p{
+    font-size: 25px;
+    color: black;
+    margin: 15px;
+    margin-left: 60px;
+}
+#sct5> div> p:nth-child(1){
+    margin-top: 110px;
+}
